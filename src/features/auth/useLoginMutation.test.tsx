@@ -1,8 +1,8 @@
 import { it, expect } from 'vitest'
 import { renderHook } from '@testing-library/react-hooks'
 import { useLoginMutation } from './useLoginMutation'
+import { QueryProvider } from '../../../renderer/providers/query'
 
-import { QueryProvider } from '../../providers/query'
 const wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <QueryProvider>
     {children}
