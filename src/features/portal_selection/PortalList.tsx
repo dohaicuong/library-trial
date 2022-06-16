@@ -5,11 +5,11 @@ import { portalAtom } from './portalAtom'
 import PortalListItem from './PortalListItem'
 
 export const PortalList = () => {
-  const [{ pages }] = useAtom(portalAtom)
+  const [data] = useAtom(portalAtom)
 
   return (
     <>
-      {pages[0].map((portal: any) => {
+      {data?.pages?.[0]?.map((portal: any) => {
         return (
           <PortalListItem
             key={portal.instance_name}
