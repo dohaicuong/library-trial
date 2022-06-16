@@ -13,7 +13,10 @@ const Page = () => (
   <Routes>
     <Route path='/' element={<Root />}>
       <Route path='/home' element={<HomePage />} />
-      <Route path='/portal-select' element={<PortalSelectionPage />} />
+      <Route
+        path='/portal-select'
+        element={<PortalSelectionPage />}
+      />
     </Route>
 
     <Route path='/login' element={<LoginPage />} />
